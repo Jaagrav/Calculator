@@ -78,6 +78,23 @@ tr:nth-child(5) td:nth-child(4) {
 .calculation {
   cursor: pointer;
 }
+.block-landscape{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;right: 0;left: 0;bottom: 0;
+  display: none;
+}
+.block-landscape div{
+  position: absolute;
+  height: fit-content;
+  max-width: 280px;
+  margin: auto;
+  text-align: center;
+  top: 0;right: 0;left: 0;bottom: 0;
+}
+
 @media only screen and (min-height: 320px) {
   td {
     height: 45px;
@@ -129,5 +146,14 @@ tr:nth-child(5) td:nth-child(4) {
 @media only screen and (min-width: 900px) {
   td {
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) and (min-height: 360px) {
+  .container{
+    display: none;
+  }
+  .block-landscape{
+    display: block;
   }
 }
