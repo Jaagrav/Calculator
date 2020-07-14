@@ -72,7 +72,7 @@ function equal() {
           0,
           e.innerHTML.indexOf("=")
         );
-        n = e.innerHTML;
+        n = e.innerHTML.substring(0, e.innerHTML.indexOf("="));
         console.log(e.innerHTML.substring(0, e.innerHTML.indexOf("=")));
       });
     });
