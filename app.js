@@ -85,7 +85,7 @@ function equal() {
 document.querySelectorAll("td").forEach((e) => {
   e.addEventListener("click", () => {
     console.log(e.innerHTML);
-    if (e.innerHTML != "=" && e.innerHTML != "AC" && e.innerHTML != "&lt;")
+    if (e.innerHTML != "=" && e.innerHTML != "C" && e.innerHTML != "&lt;")
       nAdd(e.innerHTML);
     else if (e.innerHTML == "=") equal();
     else if (e.innerHTML == "C") {
