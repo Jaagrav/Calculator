@@ -88,7 +88,7 @@ document.querySelectorAll("td").forEach((e) => {
     if (e.innerHTML != "=" && e.innerHTML != "AC" && e.innerHTML != "&lt;")
       nAdd(e.innerHTML);
     else if (e.innerHTML == "=") equal();
-    else if (e.innerHTML == "AC") {
+    else if (e.innerHTML == "C") {
       document.querySelector(".display2").innerHTML = "0";
       n = "0";
     } else if (e.innerHTML == "&lt;") {
